@@ -204,6 +204,21 @@ a {
 	}
 }
 
+.main-slider {
+	position: absolute;
+	right: 0;
+	width: 700px;
+}
+
+.main-slider .owl-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .subscribe {
 	position: absolute;
 	right: 15px;
