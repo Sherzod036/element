@@ -52,6 +52,16 @@ $(function () {
 		})
 	}
 
+	// Packages dropdown
+	const dropdownItem = $('.page-packages__dropdown-item')
+
+	dropdownItem.on('click', function () {
+		$('.page-packages__dropdown-content').removeClass('active')
+		$('.page-packages__dropdown-icon').removeClass('active')
+		$(this).find('.page-packages__dropdown-content').addClass('active')
+		$(this).find('.page-packages__dropdown-icon').addClass('active')
+	})
+
 	// Other packages block
 	const otherPackagesTM = new TimelineMax()
 

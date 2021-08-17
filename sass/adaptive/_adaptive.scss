@@ -24,10 +24,15 @@
 	}
 }
 @media (max-width: 1200px) {
+	.mobi-op {
+		display: block;
+	}
+	.header-page {
+		background: #000;
+	}
 	.header {
 		position: fixed;
-		background: #3fa535;
-		padding: 10px 0;
+		padding: 15px 0;
 	}
 	.footer-page {
 		position: static;
@@ -58,6 +63,21 @@
 	.footer__logo {
 		margin-bottom: 25px;
 	}
+	.menu {
+		width: 100%;
+	}
+	.menu__list-item {
+		margin-bottom: 15px;
+	}
+	.menu__list {
+		margin-top: 40px;
+	}
+	.menu__list-link {
+		font-size: 25px;
+	}
+	.sub-menu a {
+		font-size: 20px;
+	}
 }
 @media (max-width: 576px) {
 	.footer__top-block ul {
@@ -79,5 +99,14 @@
 @media (max-width: 500px) {
 	.taste-block__title {
 		font-size: 38px;
+	}
+	.page-packages__dropdown-content.active {
+		height: 270px;
+	}
+	.page-packages__dropdown-link {
+		font-size: 16px;
+	}
+	.hamb__text {
+		display: none;
 	}
 }
