@@ -56,6 +56,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	color: #fff;
+	overflow-x: hidden;
 }
 
 li {
@@ -113,6 +114,7 @@ a {
 	z-index: 100;
 	width: 100%;
 	padding: 30px 0;
+	background: #000;
 	&__wrapper {
 		display: flex;
 		align-items: center;
@@ -256,7 +258,7 @@ a {
 .main-slider {
 	position: absolute;
 	right: 0;
-	width: 700px;
+	max-width: 700px;
 }
 
 .main-slider .owl-nav {
@@ -299,6 +301,7 @@ a {
 
 .big-desc {
 	width: 100%;
+
 	&__wrapper {
 		width: 100%;
 		height: 450px;
@@ -307,6 +310,7 @@ a {
 		background-size: cover;
 		display: flex;
 		align-items: center;
+		padding: 15px;
 	}
 	& p {
 		font-weight: 700;
@@ -331,6 +335,34 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	&__text {
+		position: absolute;
+		z-index: 3;
+		top: 55px;
+		left: 20px;
+		font-weight: 900;
+		font-size: 46px;
+		line-height: 137.4%;
+		text-transform: uppercase;
+		color: #070707;
+		text-shadow: 0px 13px 27px #fff;
+		& svg {
+			position: absolute;
+			left: 190px;
+			top: 50px;
+			transition: 0.3s;
+		}
+	}
+	&:first-child {
+		background: #afd2f2;
+	}
+	&:nth-child(1):hover {
+		& svg {
+			left: 205px;
+		}
+	}
 	&:nth-child(2) {
 		background: radial-gradient(
 			57.65% 48.54% at 50% 50%,
@@ -361,6 +393,98 @@ a {
 	}
 	&:nth-child(6) {
 		background: radial-gradient(69.1% 50% at 50% 50%, #d3dee7 0%, #3798e2 100%);
+	}
+
+	& img {
+		position: absolute;
+		transition: 0.3s ease;
+		&.top {
+			z-index: 2;
+		}
+	}
+	&:nth-child(2) {
+		& .top {
+			top: 130px;
+		}
+		& .bot {
+			bottom: 115px;
+		}
+		&:hover {
+			& .top {
+				top: 115px;
+			}
+			& .bot {
+				bottom: 100px;
+			}
+		}
+	}
+	&:nth-child(3) {
+		& .top {
+			top: 130px;
+		}
+		& .bot {
+			bottom: 115px;
+		}
+		&:hover {
+			& .top {
+				top: 115px;
+			}
+			& .bot {
+				bottom: 100px;
+			}
+		}
+	}
+	&:nth-child(4) {
+		& .top {
+			top: 80px;
+		}
+		& .bot {
+			bottom: 0;
+		}
+		&:hover {
+			& .top {
+				top: 65px;
+			}
+			& .bot {
+				bottom: -15px;
+			}
+		}
+	}
+	&:nth-child(5) {
+		& .top {
+			top: 200px;
+			left: 100px;
+		}
+		& .bot {
+			bottom: 155px;
+			left: 175px;
+		}
+		&:hover {
+			& .top {
+				left: 85px;
+			}
+			& .bot {
+				left: 190px;
+			}
+		}
+	}
+	&:nth-child(6) {
+		& .top {
+			top: 200px;
+			left: 45px;
+		}
+		& .bot {
+			bottom: 175px;
+			left: -10px;
+		}
+		&:hover {
+			& .top {
+				top: 215px;
+			}
+			& .bot {
+				bottom: 190px;
+			}
+		}
 	}
 }
 
